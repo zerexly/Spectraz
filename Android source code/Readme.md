@@ -1,4 +1,4 @@
-** Feature Added **
+**Feature Added**
 promotion video added
 analytics feature added
 story feature added
@@ -29,7 +29,7 @@ fresco cache implement
 date added into notification
 
 
-** Bug Fixed **
+**Bug Fixed**
 video scrolling issue fix
 streaming issue fix 
 promo video issue resolve
