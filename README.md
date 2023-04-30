@@ -30,3 +30,25 @@
   </a>
   <a href="https://github.com/sahilarun/Spectraz"><img alt="Statistics Graphs" src="https://repobeats.axiom.co/api/embed/966fb1f700b2ca070b73426ccafcc5dd2b7576fb.svg"></a>
 </p>
+
+<h2>Feature Added</h2>
+Spectraz is a social media app like tik tok. Check out the list below for a full list of features:
+<br>
+<br>
+<ul>
+<li>Profile video added video description see more feature</li>
+<li>promotion video</li>
+<li>analytics feature</li>
+<li>Volume controller</li>
+<li>AR filter and 3d Sticker darkmode implement Streaming like bigo slider added dual streaming</li>
+<li>private and public streaming</li>
+<li>streaming join by cash feature</li>
+<li>invite user into streaming feature</li>
+<li>comment feature pinned video feature</li>
+<li> repost feature added Story like and story comment feature</li>
+<li>peed/slow motion video editing</li>
+<li>added text, sticker, emoji and draw video editing feature</li>
+</ul>
+
+<h2>Installation</h2>
+For a detailed installation guide, check out `documentation` .
