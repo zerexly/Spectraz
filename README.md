@@ -51,4 +51,4 @@ Spectraz is a social media app like tik tok. Check out the list below for a full
 </ul>
 
 <h2>Installation</h2>
-For a detailed installation guide, check out `documentation` .
+For a detailed installation guide, check out documentation folder.
