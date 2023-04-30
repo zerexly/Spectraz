@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.coderealm.spectraz">
+
+    <queries>
+        <package android:name="com.facebook.katana" />
+        <package android:name="com.facebook.orca" />
+        <package android:name="com.whatsapp" />
+    </queries>
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.camera2.full"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+    <uses-feature
+        android:glEsVersion="0x00030001"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.android.providers.media.MediaProvider" />
+
+    <application
+        android:name="com.coderealm.spectraz.simpleclasses.TicTic"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="allowBackup,supportsRtl">
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.profile.settings.PromotionHistoryA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.profile.analytics.VideoAnalytics"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.profile.analytics.AnalyticsA"
+            android:exported="true"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.profile.settings.CreatorToolsA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.profile.videopromotion.VideoPromoteStepsA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.profile.settings.AppThemA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.profile.ViewProfileHistoryA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.profile.usersstory.ViewStoryA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/blackStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.videorecording.PreviewStoryVideoA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/blackStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.CustomErrorActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.profile.settings.BlockUserListA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.profile.invitefriends.InviteFriendsFromContactsA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.profile.creatorplaylist.CreatePlaylistA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.profile.SearchAllUserA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.profile.InviteFriendsA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.profile.SendDirectMsg"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.videorecording.FriendsA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.soundlists.SectionSoundListA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.TagedVideosA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.WebviewA"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.PrivacyVideoSettingA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.chat.ChatA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.InboxA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.search.SearchMainA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.profile.SubmitReportA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.profile.ReportTypeA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.profile.EditProfileA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.profile.settings.UpdateEmailPhoneNoVerification"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.profile.settings.AddPayoutMethodA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.profile.settings.WalletPaymentA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.profile.settings.PushNotificationSettingA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.profile.settings.PrivacyPolicySettingA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.profile.settings.ProfileVarificationA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.profile.settings.QrCodeScannerA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.profile.settings.UpdateEmailPhoneA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.profile.settings.DeleteAccountA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.profile.settings.ChangePasswordA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.WatchVideosA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/blackStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.profile.settings.ManageProfileA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.profile.settings.AppSpaceClearA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.profile.settings.AppLanguageChangeA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.profile.settings.QrCodeProfileA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.profile.SettingAndPrivacyA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.profile.SeeFullImageA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/blackStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.videorecording.ActVideoTrimmer"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/blackStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.profile.FollowsMainTabA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="stateHidden|adjustNothing" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.profile.FavouriteMainA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.profile.ProfileA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.accounts.ForgotPassA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.videorecording.VideoRecoderDuetA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/blackStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.walletandwithdraw.MyWallet"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.walletandwithdraw.WithdrawCoinsA"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.soundlists.VideoSoundA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.videorecording.DraftVideosA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.videorecording.GallerySelectedVideoA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/blackStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.accounts.LoginA"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.SplashA"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.coderealm.spectraz.mainmenu.MainMenuActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/blackStatus"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="domain.com"
+                    android:pathPrefix="/profile/"
+                    android:scheme="http" />
+                <data
+                    android:host="domain.com"
+                    android:pathPrefix="/profile/"
+                    android:scheme="https" />
+                <data
+                    android:host="domain.com"
+                    android:pathPrefix="/mobileAPIs/"
+                    android:scheme="https" />
+                <data
+                    android:host="domain.com"
+                    android:pathPrefix="/mobileAPIs/"
+                    android:scheme="http" />
+                <data
+                    android:host="domain.com"
+                    android:pathPrefix="/stream/"
+                    android:scheme="https" />
+                <data
+                    android:host="domain.com"
+                    android:pathPrefix="/stream/"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.videorecording.VideoRecoderA"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/blackStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.videorecording.PreviewVideoA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/blackStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.videorecording.PostVideoA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.soundlists.SoundListMainA"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.livestreaming.activities.SettingsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.livestreaming.activities.StreamingMainA"
+            android:exported="false"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.livestreaming.activities.SingleCastStreamer"
+            android:exported="true"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.livestreaming.activities.SingleCastJoinA"
+            android:exported="true"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.livestreaming.activities.MultiViewLiveA"
+            android:exported="true"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.livestreaming.activities.MulticastStreamerA"
+            android:exported="true"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.livestreaming.activities.LiveUsersA"
+            android:exported="true"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.livestreaming.activities.LiveUserAuthenticationA"
+            android:exported="true"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.coderealm.spectraz.activitesfragments.livestreaming.activities.ConcertSelectionA"
+            android:exported="true"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteStatus"
+            android:windowSoftInputMode="adjustPan" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/ad_app_id" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher_foreground" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/redColor" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <service
+            android:name="com.coderealm.spectraz.services.UploadService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="startservice" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.coderealm.spectraz.firebasenotification.MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.coderealm.spectraz.firebasenotification.NotificationActionHandler"
+            android:enabled="true"
+            android:exported="true" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

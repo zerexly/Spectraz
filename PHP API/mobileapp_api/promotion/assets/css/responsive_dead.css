@@ -1,0 +1,587 @@
+
+
+@media only screen and (min-width:300px) and (max-width:520px) {
+    .destinationMainHeader h3 {
+
+        font-weight: 200;
+        text-align: center;
+        padding: 0 20px;
+        max-width: 478px;
+        margin: 0 auto;
+    }
+    .downarea i {
+        font-size: 30px;
+        margin-top: 3px;
+    }
+    .mainHeaderTop h3 {
+        font-size: 22px;
+        padding-left: 24px;
+        margin-top: 4px;
+    }
+    .tabsDataUl li {
+
+        margin-left: 3px;
+    }
+
+    .destinationMainHeader h3 {
+        font-size: 30px;
+    }
+    .destinationMainContentProfile label {
+        padding: 5px 25px 5px 30px;
+    }
+
+    .destinationMainContentProfile label p {
+        font-size: 20px;
+    }
+    .radioChecked {
+        width: 20px;
+        height: 20px;
+    }
+    .url-radio{
+        margin-right:0px;
+    }
+    .destinationMainFooter{
+        /*padding: 35px 15px;*/
+    }
+
+    .destinationMainFooter h3{
+        font-size: 16px;
+        padding-left: 15px;
+    }
+    .destinationMainFooter i {
+        top: 5px;
+        font-size: 35px;
+    }
+    .azmainPromotionImgDet div {
+        height: unset !important;
+        margin: 2px !important;
+    }
+    /*================================================ Review page css ===============================*/
+
+    .review-title{
+        height: 114px;
+        border-bottom: 1px solid #ddd;
+    }
+    .review-title h3{
+        font-size: 25px;
+    }
+    .previewtitle h3{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .dest-p{
+        font-size: 14px;
+        padding-right: 7px;
+        line-height: 18px;
+    }
+    .audience-icon{
+        margin-top: 22px;
+        padding-top: 10px !important;
+    }
+    .audience-icon i{
+        font-size: 35px;
+    }
+    .order-a a{
+        font-size: 20px;
+    }
+    .automaticmargin{
+        margin-top: 0px;
+    }
+    .review-p p{
+        font-size: 17px;
+        text-align: center;
+        padding: 0px 10px;
+        line-height: 22px;
+    }
+    .review-ptwo{
+        padding-top: 10px;
+    }
+    .review-pthree p{
+        font-size: 15px;
+        text-align: center;
+        padding: 0px 10px;
+        line-height: 8px;
+    }
+    .previewPromotionMain{
+        padding: 15px 10px !important;
+        margin-top: 0px !important;
+    }
+    .p-promotion{
+        padding-right: 0px;
+    }
+    .previewtitle{
+        font-size: 18px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    .p-promotion img{
+        width: 22px;
+    }
+    .previewtitle2, .previewtitle1{
+        padding-left:0px;
+    }
+    .previewtitle1 h3{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .previewtitle2{
+        padding-top: 10px;
+    }
+    .previewtitle2 h3{
+        font-size: 18px;
+        font-weight:400;
+    }
+    .review-destination{
+        padding:0px 10px !important;
+    }
+    .review-destination .previewtitle{
+        padding-left: 0px !important;
+        padding-top: 10px !important;
+    }
+    .previewtitlePayment{
+       margin-top: 0px; 
+    }
+    .previewtitlePayment img{
+        width: 22px;
+        margin-right: 0px;
+        margin-bottom: 16px;
+    }
+    .previewtitlePayment1{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .previewtitlePayment1 P{
+        font-size: 14px;
+        text-align: center;
+        padding: 0px 10px;
+        line-height: 18px;
+    }
+    .createPromotions{
+        margin-top: 0px !important;
+        padding: 15px 10px;
+    }
+    .createPromotions button{
+        width: 100%;
+        font-size: 16px;
+        padding: 10px 0;
+        font-weight:400;
+    }
+    .review-btn{
+        padding: 0px 10px;
+    }
+    .review-btn .review-p{
+        font-size: 14px;
+        text-align: left;
+        margin-top: 0px;
+    }
+
+    /*========================================================= Promotions page css ====================================*/
+    .mainPromotionsContentTop{
+        padding: 15px 10px !important;
+    }
+    .mainPromotionsCreate{
+        font-size: 20px;
+        padding-left: 0px;
+    }
+    .mainPromotionsContentDet{
+        padding-top: 15px;
+    }
+    .mainPromotionsContentDet img{
+        max-width: 100px;
+    }
+    .mainPromotionsContentD{
+        font-size: 20px;
+        text-align: left;
+        padding-top: 15px;
+    }
+    .mainPromotionImgDet p{
+        font-size: 20px;
+        text-align: left;
+        line-height: 27px;
+        padding-top: 5px;
+    }
+    .chooseVideo h3{
+        font-size: 20px;
+    }
+    .promotionsHr{
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .mainPromotionsContentBottom{
+        padding: 15px 10px !important;
+        margin: 0px 0px !important;
+    }
+    .managePromotion{
+        /* font-size: 20px; */
+        padding-left: 0px !important;
+        margin-bottom: 20px;
+    }
+    .backtoMainTabs img,
+    .backtoMainPromotions img,
+    .backtoMainPastPromotions img{
+        width: 30px;
+    }
+    .pastromotions{
+        margin-top: 0px !important;
+        padding-left: 0px !important;
+    } 
+    .pastromotions h3{
+        font-size: 20px;
+    }
+    .promotionsMainFooter {
+        height: 74px;
+    }
+    .promotionsFooterIcons img{
+        width: 30px;
+    }
+    .pastPromotionsCon{
+        padding: 15px 10px;
+    }
+    .pastPromotionsConHeader h3{
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+    .pastPromotionsContent{
+        display: block;
+    }
+    .pastPromotionsConHeader p{
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+    .promotion-img{
+        text-align: center;
+        padding-top: 15px;
+    }
+    .promotion-img img {
+        max-width: 100px;
+        display: block;
+        width: 100%;
+        object-fit: cover;
+    }
+    .pastPromotionsContent img{
+        border-radius: 0px;
+    }
+    .mainPromotionImgDet {
+        padding-top: 10px;
+        padding-left: 0px !important;
+        padding-right: 2px;
+    }
+    .pastPromotionsConFooter {
+        margin-top: 0px !important;
+    }
+    .pastPromotionsConFooter h3{
+        font-size: 20px;
+    }
+    .pastPromotionsConFooter p{
+        padding-right: 0px !important;
+    }
+    .pastPromotionsConFooter img{
+        width: 22px;
+    }
+    .PromotionsInsightsContent{
+        padding: 15px 10px;
+    }
+    .PromotionsInsightsHeader{
+        height: 170px;
+    }
+
+    .PromotionsInsightsResponse{
+        padding: 15px 0px !important;
+    }
+    .PromotionsInsightsResponse i{
+        font-size: 22px;
+    }
+
+    .promotioncomments {
+
+        font-size: 22px;
+        margin-left: 0px;
+    }
+    .promotioncomments i {
+        margin-right: 13px;
+    }
+    .promotionBadge {
+
+        font-size: 22px;
+    }
+    .promotionBadge img {
+        margin-right: 13px;
+        width: 22px;
+    }
+    .interaction{
+        padding: 15px 0px !important;
+    }
+    .interactionp {
+        font-size: 20px;
+        margin: 0px 0px !important;
+    }
+    .interactionquantity{
+        padding-top: 15px;
+    }
+    ..az_finalBudget{
+        margin-left: -7px;
+    }
+    .interactionCount{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .interactionClick{
+        font-size: 20px; 
+    }
+    .interaction1 {
+        padding-left: 0px !important;
+    }
+    .finalBudget {
+        font-size: 20px;
+        padding: 5px 10px;
+        margin-bottom: 0px !important;
+    }
+    .chooseVideo img{
+        width: 22px;
+    }
+    .pastromotions img{
+        width: 22px;
+    }
+    .input-search{
+        margin: 0px 0px;
+    }
+    .search-url{
+        padding-bottom: 15px;
+    }
+    .input-search input{
+        padding: 15px 0px 0px 0px;
+        font-size: 20px;
+    }
+    .search-img{
+        right: 14px;
+        top: 22px;
+        width: 22px;
+    }
+    .urltitle{
+    margin-top: 0px; 
+    padding-left: 0px;
+    padding-top: 15px;
+    }
+    .learntitle h3{
+        font-size: 20px;
+    }
+    .urltitle h3{
+        font-size: 20px;
+    }
+    .learntitle{
+        padding-top: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .learn-border {
+        margin-top: 0px !important;
+    }
+    .shop-border {
+        margin-top: 0px !important; 
+        margin-bottom: 0px !important;
+    }
+/*============================================== Create audience css ======================================*/
+
+    .btnBack img{
+        width: 30px;
+    }
+    .audHeadIn h3{
+        font-size: 24px;
+        padding-left: 13px;
+    }
+    .btnTick img{
+        width: 30px;
+        margin-top: 8px;
+    }
+    .audLineHead {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .tabSection{
+        padding: 15px 10px;
+    }
+    .tabsIn {
+        font-weight: 400;
+        font-size: 22px;
+        margin-bottom: 0px;
+    }
+    .audParagraph {
+        font-size: 20px;
+        font-weight: 400;
+        color: #cabbbb;
+        margin-bottom: 0px;
+        padding-top: 15px;
+    }
+    .peopleReachedQuanTabs li a {
+        padding: 2px 43px;
+    }
+    .audbarHead {
+        padding: 15px 10px;
+    }
+    .audName {
+        font-size: 17px !important;
+    }
+    .audBar img{
+        width: 22px;
+        height: 22px;
+    }
+    .angleRight {
+        font-size: 27px!important;
+    }
+
+    .audBarLast {
+        padding-bottom: 0px !important;
+        margin-top: 5px;
+    }
+
+    .budget-title h3{
+        font-size: 22px; 
+    }
+    .budget-title p{
+        font-size: 22px; 
+    }
+    .targettedAudienceMain{
+        padding: 0px 20px !important;
+        margin-top: 0px;
+    }
+    .targettedAudienceMain h3{
+        font-size: 18px; 
+    } 
+    .distance-slider {
+        margin: 49px auto;
+    }
+    .audHeadIn img{
+        width: 18px;
+        height: 16px;
+    }
+    .audHead{
+        align-items: center;
+    }
+    .location-tik img{
+        width: 30px;
+    }
+    .potentialReachedTabs{
+        padding-top: 15px;
+    }
+    .potentialReachedTabs li {
+        width: 29%;
+    }
+    .RLtabs {
+        font-size: 21px;
+        padding: 0px 0px ;
+        margin-bottom: 0px!important;
+        margin-top: 0px !important;
+    }
+    .searchBar {
+        padding: 0px 0px 15px 0px;
+    }
+    .searchIcon {
+        font-size: 22px!important;
+        margin-right: 17px;
+    }
+    .locationPlace {
+        font-size: 20px;
+    }
+    .locationParagraph {
+        font-size: 20px;
+        padding-right: 0px;
+    }
+    .searchBarUS img{
+        width: 30px;
+    }
+    .RLtabs li a.active {
+        padding-bottom: 10px;
+    }
+    .searchLocDet{
+        padding: 0px;
+    }
+    .searchAllWorld h2{
+        font-size: 22px;
+    }
+
+    /*==================================================== Loader Start======================================= */
+.wrapper{
+    display: none;
+}
+.loading{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+  
+/* .main-wrap {
+    background: #000;
+    text-align: center;
+}
+.main-wrap h1 {
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.col-md-3 {
+    display: block;
+    float:left;
+    margin: 1% 0 1% 1.6%;
+    background-color: #eee;
+    padding: 50px 0;
+} */
+
+/* .col:first-of-type {
+margin-left: 0;
+}
+  .targettedAudienceMain{
+    margin-top: 23px ;
+} */
+  
+  /* ALL LOADERS */
+  
+.loader{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+  
+  /* LOADER 1 */
+  
+#loader-1:before, #loader-1:after{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: 10px solid transparent;
+    border-top-color: #3498db;
+}
+  
+#loader-1:before{
+    z-index: 100;
+    animation: spin 1s infinite;
+}
+  
+#loader-1:after{
+    border: 10px solid #ccc;
+}
+  
+@keyframes spin{
+    0%{
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+  
+    100%{
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+}
+  
+/*================================================ loader end =======================================*/
+
+}

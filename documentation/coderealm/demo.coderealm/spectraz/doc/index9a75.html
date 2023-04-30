@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <title>Spectraz - Documentation</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'http://demo.qboxus.com/connect.facebook.net/en_US/fbevents.html');
+      fbq('init', '2223805407931076');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=2223805407931076&amp;ev=PageView&amp;noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-88404643-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-88404643-1');
+    </script>
+    
+</head> 
+
+<body >
+    <div class="page-wrapper">
+        
+        <div class="doc-wrapper">
+            <div class="container">
+                <div class="doc-body row">
+                    <div class="doc-content col-md-9 col-12 order-1">
+						
+						<div class="content-inner">
+                           
+						   <section id="get-started-section" class="doc-section">
+							    <h2 class="section-title">Get Started</h2>
+                               
+							    <div class="section-block">
+
+									<p>Please read the documentation carefully , and if you have any question check us . Most pages are accompanied by a video tutorial , it's recommended to check both , the video and the written Documentation . 
+									    
+									    <h4 id="phainc-theme-addons">Must Read this:</h4>
+									    After purchase if you run the project and test the build in phone it will not work becuase you have to setup the <a class="scrollto" href="#API-Configuration">Web API</a> first then app will be works fine.
+									    <br><br>
+									    <a class="scrollto" href="#API-Configuration">Web API</a> is in PHP 7.0 and it will work on any kind of hosting packages 
+									</p>
+	
+                    
+                    
+								</div>
+                            </section>
+							
+							
+							<section id="server-requirements" class="doc-section">
+                              
+							    <h2 class="section-title">Server Requirements</h2>
+                               
+							    <div class="section-block">
+                                  
+   								    <p>We have added some advance functions into our product. We try to keep our product simple but unfortunately due to greater no of request we are forced to upgrade our product and we had to use a <a href="https://ffmpeg.org/">FFMPEG Library</a>.</p>
+                                    
+                                    <ul>
+                                        <li> Php 7.0</li>
+                                        <li>VPS/Cloud:  The code will not work on Shared hosting.</li>
+                                        <li>Ffmpeg v3.4.7 should be installed</li>
+                                        <li>Curl should be enabled</li>
+                                        <li>memory_limit should be 500M <a href="assets/img/memorylimit.jpg" target="_blank">View Attachment</a></li>
+                                        <li>4 Core processor + 8/16GB Ram</li>
+                                    </ul>
+                                    
+                                    <p>If you face any issue in video upload or it takes time in uploading video to server that might be because of your server. Sometimes server gives this error if you check your error log file</p>
+                                    
+                                    <p><b>Allowed memory size of 33554432 bytes exhausted (tried to allocate 15756752 bytes)</b></p>
+                                    
+                                    <p>If you see this error then you would need to upgrade your server or increase Php memory limit by going into <b>php.ini</b> file. you need to google about where this file is. This file resides in different locations in different servers</p>
+                                    
+
+                                    
+                                    <h4>Step 1</h4>
+								    <p>First thing which is very important is that you need to either use VPS or cloud Hosting. This FFMPEG won't work on shared hosting and you need a terminal access to install ffmpeg</p>
+                                    
+                                    <!--<h4>Step 2</h4>-->
+                                    <!--<p>Second thing is we do not provide any support in configuring your FFMPEG. You need to make sure that your FFMPEG works and its installed. We can share you one tutorial which we followed and installed on one of our client CENT OS operating system. We will constantly update this part as soon as we came across different operating system of our clients during installation. </p>-->
+                                    <!--<p>-->
+                                        
+                                    <!--    <b>For Installation On Centos 7.8 follow this</b> - https://linuxize.com/post/how-to-install-ffmpeg-on-centos-7/ -->
+                                    <!--</p>-->
+                                     <!--<h3>ffmpeg version was  3.4.7</h3>-->
+                                     <!--<b>Note:</b> If you have ffmpeg version 2.6.8 some of the features won't work. For example while doing video and audio merge it will generate 0KB file. This is because of the version issue-->
+                                    <!--<p>-->
+                                    <!--    <b>Note:On these platforms we have tested ourselves and installed ourselves. We are sharing the platforms and tutorials of what have worked for us. But it does not mean it cannot be installed on other servers. You just have to go in google and find tutorials regarding how to setup in your environment</b>-->
+                                    <!--</p>-->
+                                    
+                                    <!--<div class="embed-responsive embed-responsive-16by9"><iframe width="876" height="493" src="https://www.youtube.com/embed/uZac_8lwfbc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>-->
+                                    
+                                    <!--<div class="embed-responsive embed-responsive-16by9"><iframe width="876" height="493" src="https://www.youtube.com/embed/CYiqf_Yym4s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>-->
+                                    
+                                    
+            <!--                        <h4>Step 3</h4>-->
+								    <!--<p>This is the tutorial you should follow if you want to setup on CENT OS  7.8   operating system. you can also google something like ffmpeg install ubuntu (your operating system ) something like this. You will find tons of tutorial</p>-->
+                                    
+            <!--                        <h4>Step 4</h4>-->
+								    <!--<p>Once installed you should locate ffmpeg and ffprobe file. we did this </p>-->
+            <!--                        <img src="assets/img/ffprobe0045004500450045.png?time=1234">-->
+                                    
+                                    <h4>Step 2</h4>
+                                    <p>Make sure that your server does not block shell exec , or exec. You have to remove it from WHM and save the settings</p>
+                                    <img src="assets/img/disableShell00450045004500450045.png?time=1234">
+                                    
+                                    
+                                   <h4>Step 3</h4>
+                                    <p>Increase your upload limit</p>
+                                    <img src="assets/img/upload00450045004500450045.png?time=1234">
+                                    <img src="assets/img/upload-100450045004500450045.png?time=1234">
+                                    <p>One last thing you need to do is increase your <b>post_max_size</b> and <b>upload_max_filesize</b>.</p>
+                                    
+                                    
+                                    <p><b>Note: We have tested this on Hostgator VPS. Terminal we accessed from whm. Operating system was CENT OS 7.8</b></p>
+
+
+								</div>
+                            </section>
+							
+							
+							<section id="Android-Configuration" class="doc-section">
+
+								<h2 class="section-title">Android Configuration:</h2>
+                                
+								<div class="section-block">
+                                    
+									<p>In order to start configuring , you need to install Android studio and the 'Java SE Development Kit'. First download the android studio from here <a href="https://developer.android.com/studio/" target="_blank">Android Studio</a> </p>
+
+									
+									<div class="embed-responsive embed-responsive-16by9"><iframe width="876" height="493" src="https://www.youtube.com/embed/0zx_eFyHRU0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+									
+                                </div>
+                            </section>
+
+							
+							<section id="SDK-Manager" class="doc-section">
+
+								<h2 class="section-title">SDK Manager</h2>
+                                
+								<div class="section-block">
+                                   
+								   <p>The installer , as also shown in the video should automatically download and install all required components . if you want to do manual setup , download at least the following components using the SDK manager </p>
+								   
+								   
+									<ul>
+										<li>SDK tools </li>
+										<li>SDK platform Tools</li>
+										<li>SDK Build Tools</li>
+										<li>Google Play Services</li>
+										<li>Android Support Library</li>
+										<li>Google Repository</li>
+										<li>Google USB Driver</li>
+									</ul>
+
+									<p>You can download these SDK , if not installed already , using the SDK manager <a href="https://developer.android.com/studio/intro/update.html#sdk-manager">SDK Manager</a> After you're done, you can open Android Studio and continue. </p>
+									
+									<p><strong>*Note: After successfully installing the Android Studio please make a sample app project to install necessary files into computer by android studio.</strong></p>
+									
+                                </div>
+                            </section>
+							
+							<section id="Register-Bundle" class="doc-section">
+
+								<h2 class="section-title">Register Bundle ID</h2>
+                                
+                                <h4>Most Important Step</h4>
+                                <p>You have to register your mobile app bundle id at your <a href="https://qboxus.yeahhelp.com/">Support Account</a></p>
+                                <img src="assets/img/registerBundledId0045.png?time=1234">
+                                <img src="assets/img/addbundle0045.png?time=1234">
+                            
+                            </section>
+							
+							<section id="Importing-Android-Project" class="doc-section">
+                                <h2 class="section-title">Importing Android Project and Change Package Name</h2>
+								
+								<div class="section-block">
+									
+									<p>To import the app, simply open Android Studio and import/open the template. Make sure to wait for all the processes (the Gradle Build) to complete before continuing to the next step</p>
+									
+									<div class="embed-responsive embed-responsive-16by9"><iframe width="876" height="493" src="https://www.youtube.com/embed/KvMm_EHAdDU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+									
+									<br><br>
+									<h4 id="phainc-theme-addons">Addition steps</h4>
+									<p>Sometimes, the Gradle Build fails. In some cases additional components are needed, Android Studio will ask you to do download these additional SDK components in the 'messages' tab, simply follow the instructions provided to install and download the additional components. </p>
+									
+								</div>
+						  	</section>
+							
+
+							<section id="Change-App-Name" class="doc-section">
+
+							 	<h2 class="section-title">Change App Name</h2>
+								
+								<div class="section-block">
+								
+									<p>Below is illustrated how you can change the name of the application. </p>
+
+									<p>Go to app->res->values->strings.xml</p>
+
+									<img src="assets/img/Change%20app%20name00450045004500450045.png?time=1234">
+								
+								</div>
+							</section>
+							
+
+							<section id="Change-Color-Scheme" class="doc-section">
+								<h2 class="section-title">Change Color Scheme</h2>
+								<div class="section-block">
+								
+									 <p>Below is illustrated how you can change the color of the application.
+               
+
+									<img src="assets/img/Change%20color00450045004500450045.png?time=1234">
+									
+				
+								</div>	
+							</section>
+					
+						
+							<section id="Change-Theme-of-Application" class="doc-section">
+
+								<h2 class="section-title"> Change Theme of Application </h2>
+
+								<div class="section-block">
+
+									 <p>Below is illustrated how you can change the theme of the application.
+                                        <br> Go to <strong>app->res->values->styles</strong>
+                                    </p>
+
+                                  
+								
+									<img src="assets/img/Change_style00450045004500450045.png?time=1234">
+								</div>	
+							</section>
+
+
+							<section id="Change-App-icon" class="doc-section">
+								<h2 class="section-title"> Change App icon </h2>
+								<div class="section-block">
+								
+										<div class="embed-responsive embed-responsive-16by9"><iframe width="876" height="493" src="https://www.youtube.com/embed/M8gjpCtTf8A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+
+								</div>	
+							</section>
+
+
+							<section id="ChangeSplashscreen " class="doc-section">
+								<h2 class="section-title"> Change Splash Screen  </h2>
+								<div class="section-block">
+								
+									<p>We need to put a png file with named 'splash.png' in the following folder: </p>
+									
+									<p>Go to project location->Android source code->Spectraz->app->src->main->res->drawable</p>
+
+								</div>	
+							</section>
+						
+						
+							<section id="Change-API-Links" class="doc-section">
+								<h2 class="section-title"> Change API Links </h2>
+
+								<div class="section-block">
+
+									<p>Open your API URL and copy the Android Config code <a href="#">"http://domain.com/mobileapp_api/"</a> and replace with the code that we highlight in screenshot.
+									</p>
+
+									<p>Click on app->java->com.packagename.appname->Constants
+									</p>	
+									<img src="assets/img/Change_api_link00450045004500450045.png?time=1234">
+
+									<p>Above is illustrated how you can change the Rest Api link of the application. </p>
+								</div>	
+							</section>
+						
+						
+							<!-- <section id="Change-API-Links" class="doc-section">
+								<h2 class="section-title"> Enable Duet </h2>
+								<div class="section-block">
+									<p>You have to enable this feature from the android code e.g
+										<br>public static final boolean is_enable_duet= <strong>false;</strong>=> is_enable_duet=<strong>true;</strong>
+									</p>
+									<p>
+										Click on app->java->com.packagename.appname->simpleClasses->Variables
+										<br>	and in Variables class go to line no.# 94 approximately 
+									</p>
+									<b>Note:Make sure you have extended API files to make functional this feature</b>
+									<img src="assets/img/enableDuet.png?time=1234">
+								</div>	
+							</section> -->
+						
+						
+							<section id="Change-API-Links" class="doc-section">
+								<h2 class="section-title"> change the max & min video recording </h2>
+								<div class="section-block">
+									<p>if you want to change the maximum and minimum video recording time then follow these instructions</p>
+									<p>
+										Click on app->java->com.packagename.appname->Constants
+										<br> and in Constants class go to line no.# 39 approximately 
+
+									</p>
+									<img src="assets/img/video_recording_limit00450045004500450045.png?time=1234">
+								</div>	
+							</section>
+						
+							<section id="Change-AdMob" class="doc-section">
+								<h2 class="section-title"> Setup Ad Mob </h2>
+								<div class="section-block">
+									<p>
+										For Ad Mob setup you need ad mob id's which you get from your ad mob account. If you have no ad mob account then go to this 
+										<br><strong> URL: https://admob.google.com/home/</strong> make an account, get id's and paste in app as metioned below.
+									</p>
+									<p>Click on app->res->values->strings.xml</p>
+									<img src="assets/img/Change_ad_id00450045004500450045.png?time=1234">
+									
+								</div>	
+							
+							</section>
+
+							<section id="Remove-AdMob" class="doc-section">
+								<h2 class="section-title"> Remove Ad Mob Ads </h2>
+								<div class="section-block">
+									<p>If you want to remove ads just set the value "true" in this code, follow this screenshot</p>
+									
+									<p>public static final boolean IS_REMOVE_ADS=false =>  IS_REMOVE_ADS=true;</p>
+									
+									<img src="assets/img/removeAds00450045004500450045.png?time=1234">
+
+								</div>	
+							
+							</section>
+						
+						
+							<section id="In-app-Purchases" class="doc-section" style="display:none;">
+								<h2 class="section-title"> In-app Purchases </h2>
+								<div class="section-block">
+									
+									<img src="assets/img/Change_product_id00450045004500450045.png?time=1234">
+									
+									<div class="embed-responsive embed-responsive-16by9"><iframe src="https://www.youtube.com/embed/fXT2ZQMo4Uk" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="1280" height="720" frameborder="0"></iframe></div>
+									
+									<br>
+									<p>Above is illustrated how you can change the name of the application and change the AdMod ID. </p>
+									
+									<p>
+										Go to com.dinosoftlabs.Spectraz.Users.Users_F file and search "case R.id.refresh_btn" here you can see the code which will be changed if you don't want to show the Subscription options. 
+									</p>
+									
+									<xmp>case R.id.refresh_btn: if(MainMenuActivity.purduct_purchase){ card_viewstack.reverse(); } 
+									else open_subscription_view(); break;</xmp>
+									
+								</div>	
+							
+							</section>
+							
+
+							<section id="Remove-change" class="doc-section">
+								<h2 class="section-title"> Remove/Change Streaming Limit </h2>
+								<div class="section-block">
+									
+									<p>If you want to remove/change live streaming and video calling limit dialog then follow Screenshot.</p>
+									<img src="assets/img/video_call_limit00450045004500450045.png?time=1234">
+								</div>
+
+							</section>
+
+
+							<section id="Change-Language" class="doc-section">
+
+								<h2 class="section-title"> Change Language </h2>
+
+								<div class="section-block">
+									<p>For Now application support only 2 languages ( English and Arabic). if you want to add more languages in app the follow the steps below.</p>
+
+									<img src="assets/img/language_change1.png">
+									<img src="assets/img/language_change2.png">
+									<img src="assets/img/language_change3.png">
+									<img src="assets/img/language_change4.png">
+									<img src="assets/img/language_change5.png">
+									<img src="assets/img/language_change6.png">
+									<img src="assets/img/language_change7.png">
+									<img src="assets/img/language_change8.png">
+									
+								</div>
+							</section>
+
+
+
+						
+					
+							<section id="Firebase-Configuring" class="doc-section">
+								<h2 class="section-title"> Firebase Configuring </h2>
+								<div class="section-block">
+									
+									<div class="embed-responsive embed-responsive-16by9"><iframe width="876" height="493" src="https://www.youtube.com/embed/0e0FhN7pPls" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+									
+								</div>	
+							
+							</section>
+
+							<section id="Nudity-Detection" class="doc-section">
+    							
+    							<h2 class="section-title"> Nudity Detection (Deepengin.com) </h2>
+    							<div class="section-block">
+    							    <img src="assets/img/deepengin.png">
+    							</div>	
+    							
+    							<h4>Deepengin Configration</h4>
+    							<p>Add your Deepengin  key in your <strong>mobileapp_api/app/Config/constant.php file</strong></p>
+    							
+    							<pre>
+define('DEEPENGIN_KEY', 'key here');
+define('DEEPENGIN_VIDEO_MODERATION_URL', 'https://videos.deepengin.com/v1/videoModeration');    
+    							</pre>
+							
+							</section>
+
+							<section id="Change-Firebase-Database" class="doc-section">
+								<h2 class="section-title"> Change Firebase Database Rules </h2>
+								<div class="section-block">
+									
+									<p>if you did not change the firebase rules some of the app functions will not work like chat or save/change pictures.</p>
+									
+									<img src="assets/img/Screenshot_160045004500450045.png?time=1234">
+									<img src="assets/img/Screenshot_50045004500450045.png?time=1234">
+									
+									<h4 class="section-title">Get Firebase Server key</h4>
+
+                                    <img src="assets/img/server_key1.png">
+                                    <img src="assets/img/server_key2.png">
+
+                                    <p>Add your Firebase server key in your <strong>mobileapp_api/app/Config/constant.php</strong>  file</p>
+                                    <img src="assets/img/server_key3.png">
+
+
+									<h4 class="section-title">Add Release SHA1 key</h4>
+
+                                    <p>
+										After uploading your app on <b>Google Play store</b> get Release SHA1 key from <b>Google Play store</b> and paste into following Screen shot
+
+										<b>*Note: </b> If you will not add Release SHA1 key then Phone & Google login will not work.
+									</p>
+
+									<p>We have told you in <b>Debug and Release key</b> section how you can get SHA1 key from <b>Google Play store</b></p>
+
+									<img src="assets/img/firebaseconfig0045004500450045.png?time=1234">
+
+									  
+
+								</div>	
+							
+							</section>
+						
+						
+							<section id="Push-Notification-Cloud-Function" class="doc-section" style="display:none;">
+								<h2 class="section-title"> Push Notification Cloud Function </h2>
+								<div class="section-block">
+									
+									
+									<h4 id="#">Method 1</h4>
+									
+									<p>For Adding Firebase Function in your firebase project will contains Two Part</p>
+									
+									<ul>
+										<li>Install node.js and Firebase CLI</li>
+										<li>Deploy Firebase Function in firebase project</li>
+									</ul>
+									
+									<p> Install node.js and Firebase CLI </p>
+									
+									<div class="embed-responsive embed-responsive-16by9"><iframe src="https://www.youtube.com/embed/EvV9Vk9iOCQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="1280" height="720" frameborder="0"></iframe></div>
+									
+									<h4 id="#">Method 2</h4>
+									
+									<img src="assets/img/cloud_funtion_pic100450045004500450045.png?time=1234">
+									<img src="assets/img/cloud_funtion_pic200450045004500450045.png?time=1234">
+									<img src="assets/img/cloud_funtion_pic300450045004500450045.png?time=1234">
+									
+									<p>
+										You have to paste the code in <b>Index.js</b> and <b>package.json</b> to deploy the firebase Fuction
+										
+									</p>
+									
+									<h4 id="#">Index.js</h4>
+									<p>
+										
+										<br>
+											you have to put your Firebase Real time database url here 
+										<br>
+										<b>databaseURL: 'https://<your Database name>.firebaseio.com'</b>
+										
+										
+										
+									</p>
+									<textarea style="height: 300px; overflow: scroll;width: 100%;">const functions = require('firebase-functions');
+										const admin = require('firebase-admin');
+										admin.initializeApp({
+										credential: admin.credential.applicationDefault(),
+										databaseURL: 'https://<your Database name>.firebaseio.com'
+										});
+										
+										exports.sendNotification = functions.database.ref('/notifications/{u_id}/{notifi_id}').onWrite((data, context) => {
+										
+											const user_id = context.params.u_id;
+											const notification_id = context.params.notifi_id;
+										
+											var Ref_for_delete = admin.database().ref(`/notifications/${user_id}/${notification_id}`);
+										
+											console.log('We have a notification from : ', user_id);
+											
+											
+											const username = admin.database().ref(`/notifications/${user_id}/${notification_id}/name`).once('value');
+											const userpic = admin.database().ref(`/notifications/${user_id}/${notification_id}/picture`).once('value');
+											const message = admin.database().ref(`/notifications/${user_id}/${notification_id}/message`).once('value');
+											const receiver_id = admin.database().ref(`/notifications/${user_id}/${notification_id}/receiverid`).once('value');
+											const action_type = admin.database().ref(`/notifications/${user_id}/${notification_id}/action_type`).once('value');
+											const deviceToken = admin.database().ref(`/notifications/${user_id}/${notification_id}/token`).once('value');
+										
+										
+											return Promise.all([username,userpic,message,receiver_id,action_type,deviceToken]).then(result => {
+										
+											const userName = result[0].val();
+											const pic = result[1].val();
+											const msg = result[2].val();
+											const rid = result[3].val();
+											const actiontype = result[4].val();   
+											const token_id = result[5].val();
+										
+										
+											const payload = {
+												
+											notification : {
+											
+												title : `${userName}`,
+												body: `${msg}`,
+												sound : "default"
+											},
+											
+												data : {
+												title : `${userName}`,
+												body: `${msg}`,
+												icon: `${pic}`,
+												senderid: `${user_id}`,
+												receiverid: `${rid}`,
+												action_type: `${actiontype}`
+												}
+												
+											};
+										
+										
+											Ref_for_delete.remove();
+											
+											return admin.messaging().sendToDevice(token_id, payload);
+										
+										
+											});
+										
+										
+											});	
+									</textarea>
+					
+					
+									<h4 id="#">Pacakge.json</h4>			
+									<p>
+										You gave to follow this step becuase sometime push notification will not work  follow the screenshort  
+										<img src="assets/img/cloud-step.png" alt="cloud-step">
+									</p>			
+									<textarea style="height: 300px; overflow: scroll;width: 100%;">{
+									"name": "functions",
+									"description": "Cloud Functions for Firebase",
+									"scripts": {
+										"lint": "eslint .",
+										"serve": "firebase serve --only functions",
+										"shell": "firebase functions:shell",
+										"start": "npm run shell",
+										"deploy": "firebase deploy --only functions",
+										"logs": "firebase functions:log"
+									},
+									"dependencies": {
+										"firebase-admin": "~6.0.0",
+										"firebase-functions": "^2.0.3"
+									},
+									"devDependencies": {
+										"eslint": "^4.12.0",
+										"eslint-plugin-promise": "^3.6.0"
+									},
+									"private": true
+									}
+									</textarea>
+									
+								</div>	
+							
+							</section>
+						
+						
+							<section id="Debug-and-release-Key" class="doc-section">
+								<h2 class="section-title"> Debug and release Key </h2>
+								<div class="section-block">
+									
+									
+									
+									<p>Before going to next you have to learn about the SHA1 key for both debug and release. if you are in the development mode then you will use the debug SHA1 key but when you going to publish
+                                        the app on play store then you will have to use the SHA1 key of Release key.</p>
+                                
+                                <p>First you will check your android studio version here i mentioned how you can check.</p>
+                                    
+                                    <img src="assets/img/android_studio_1.png">
+
+                                    <img src="assets/img/android_studio_2.png">
+
+                                    <p>if your current android studio version is less than or equal to 4.1.1 then you will follow step 1 otherwise you will follow step 2 to get SHA1 key..</p>
+
+                                    <h4>Step 1</h4>
+
+                                    <img src="assets/img/debug.png">
+
+                                    <h4>Step 2</h4>
+
+                                    <img src="assets/img/Screenshot_222.png">
+
+                                    <img src="assets/img/Screenshot_223.png">
+
+                                    <img src="assets/img/Screenshot_224.png">
+
+                                    <img src="assets/img/debug.png">
+									
+									
+									<h4 id="#">Method 1 How to get the SH1 key for the published app (Signed or release key)</h4>
+								
+									<p> Follow the steps</p>
+									
+									<img src="assets/img/sh1_key_100450045004500450045.png?time=1234">
+									<img src="assets/img/sh1_key_200450045004500450045.png?time=1234">
+									<img src="assets/img/sh1_key_200460045004500450045.png?time=1234">
+									<img src="assets/img/sh1_key_300450045004500450045.png?time=1234">
+									<img src="assets/img/sh1_key_400450045004500450045.png?time=1234">
+									<img src="assets/img/sh1_key_500450045004500450045.png?time=1234">
+									
+									
+									<h4 id="#">Method 2 How to get the SH1 key for the published app (Signed or release key)</h4>
+									
+									<p> To get realese sh1 contains two step. </p>
+									<p>Step1: you will generate your own app signing key <a href="https://developer.android.com/studio/publish/app-signing">Create signing key</a></p>
+									<p>Step2: Get the Sh1 key of app signing key</p>
+									
+									<p id="#">Get the Sh1 key. Run the below command on Command Promt</p>
+									
+									<xmap>
+									keytool.exe -list -v -alias {alies name you set according to above toturial "key0" is the alies name} -keystore "{file adress of the key}" -storepass {password} -keypass {password}
+									</xmap>
+									
+									
+								</div>	
+							
+							</section>
+						
+						
+							<section id="Facebook-Login" class="doc-section">
+								<h2 class="section-title"> Facebook Login </h2>
+								<div class="section-block">
+									
+									
+									
+									<h4>You have to follow the steps</h4>
+									
+								<p>Here is the Helping video for setup facebook login </p>
+								<div class="embed-responsive embed-responsive-16by9"><iframe width="876" height="493" src="https://www.youtube.com/embed/guG0qhV-ylQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+									
+									<h4>Step 1</h4>
+									
+									<p>Put you facebook id and App Secret here</p>
+									<p>Go to following web file </p>
+									<p>mobileapp_api/app/Config/constant.php</p>
+									
+									<img src="assets/img/fb130045004500450045.png?time=1234">
+
+									<h4>Facebook User Friends Permission</h4>
+
+									<p>if you want to enable feature of invite friends from facebook in your app then follow below video and show into invite friends screen. </p>
+									
+									<div class="embed-responsive embed-responsive-16by9"><iframe width="876" height="493" src="https://www.youtube.com/embed/h7cl4xgswnA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+									
+									<h4>Facebook Login New Implementation</h4>
+
+									<p>You have to follow these two images to update facebook client token</p>
+									
+									<img src="assets/img/Screenshot_fb_8.png">
+									<img src="assets/img/Screenshot_fb_9.png">
+									
+								    
+
+
+								</div>	
+							
+							</section>
+						
+						
+							<section id="Google-Login-Configuration" class="doc-section">
+								<h2 class="section-title"> Google Login Configuration </h2>
+								<div class="section-block">
+									
+									<p>Here is the Helping video for setup google login </p>
+									<iframe src="https://www.youtube.com/embed/si9KDlnj3eQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="100%" height="400px" frameborder="0"></iframe>
+								
+								
+									<h4> Step 1 </h4>
+									<img src="assets/img/google/Screenshot_13.png" >
+									<img src="assets/img/google/G000450045004500450045.png?time=1234">
+									
+									
+									<h4> Step 2 </h4>
+									
+									<img src="assets/img/google/G100450045004500450045.png?time=1234">
+									
+									
+									<h4> Step 3 </h4>
+									
+									<img src="assets/img/google/G200450045004500450045.png?time=1234">
+									
+									
+									<h4> Step 4 </h4>
+									
+									<img src="assets/img/google/G300450045004500450045.png?time=1234">
+									
+									
+									<h4> Step 5 </h4>
+									<p>Go to following web file </p>
+									<p>mobileapp_api/app/Config/constant.php </p>
+									<img src="assets/img/google00450045004500450045.png?time=1234">
+								
+									
+								</div>
+
+							</section>
+
+
+							<section id="Hide-Any-Social-Media-Button" class="doc-section">
+								<h2 class="section-title"> Hide Any Social Media Button </h2>
+									
+								<div class="section-block">
+									<h4>If you want to disable facebook login</h4>
+									
+									<p> 
+										if you want to disable facebook or google login button you have to hide the mentioned View/Button just add <b>android:visibility="gone"</b>
+									</p>
+									<img src="assets/img/loginscreen_social_disable00450045004500450045.png?time=1234">
+									
+								</div>
+
+							</section>
+
+
+							<section id="Giphy-API" class="doc-section">
+								<h2 class="section-title"> Giphy API & Integration </h2>
+								
+								<div class="section-block">
+									<p>If you Here is the helping video for setup Giphy API </p>
+									<div class="embed-responsive embed-responsive-16by9"><iframe width="876" height="493" src="https://www.youtube.com/embed/sRWGrPW6PPc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+									<p>Click on <a href="#">developers.giphy.com</a> . "Create an Account" and then "Create an App" then you get the API key
+									"Copy the key" and paste at mentioned place in following screenshot.</p>	
+									
+									<img src="assets/img/Screenshot_Giphy100450045004500450045.png?time=1234">
+								</div>
+
+							</section>
+							
+							<section id="argear-configuration" class="doc-section">
+								<h2 class="section-title"> ARGear Configuration </h2>
+								
+								<div class="section-block">
+									<p>For use AR Filter and 3D effects into your video editing we have use the ARGear SDK. So in below we will tell you which action you have to done for run video editing in to your project </p>
+										<div class="embed-responsive embed-responsive-16by9"><iframe width="761" height="409" src="https://www.youtube.com/embed/M7WiwIz5rko" title="ArGear Configuration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+									<p>Click on <a href="#">argear.io</a> . "Create an Account" and then "Create an Project" then you get the keys
+									"Copy the keys" and paste at mentioned place in following screenshot.</p>	
+									
+									<img src="assets/img/argear_configuration0045.png?time=1234">
+								</div>
+
+							</section>
+							
+
+							<section id="agora-streaming" class="doc-section">
+								<h2 class="section-title"> Agora Configuration </h2>
+								<p>For live streaming video we have use the agora SDK. So in below we will tell you which action you have to done for run live streaming in to your project </p>
+								<h4>Step 1</h4>
+								<p>Go to https://sso.agora.io/v2/signup then sign up.</p>
+
+								<h4>Step 2</h4>
+								<p>After login you will go to agora dashboard their you can create your project</p>
+								
+								<img src="assets/img/agora_dashboard00450045004500450045.png?time=1234">
+								<img src="assets/img/create_project00450045004500450045.png?time=1234">
+								<img src="assets/img/create_project200450045004500450045.png?time=1234">
+								<img src="assets/img/Screenshot_4300450045004500450045.png?time=1234">
+							</section>
+						
+						
+							<section id="In-app-Purchase" class="doc-section" >
+								<h2 class="section-title"> In-app Purchases </h2>
+								<div class="section-block">
+									
+									<p>Follow below steps to make product Id for In App Purchase </p>
+
+									<img src="assets/img/Inapppurchase/Screenshot_1.png">
+									<img src="assets/img/Inapppurchase/Screenshot_2.png">
+									<img src="assets/img/Inapppurchase/Screenshot_3.png">
+									<img src="assets/img/Inapppurchase/Screenshot_4.png">
+									<img src="assets/img/Inapppurchase/Screenshot_5.png">
+									<img src="assets/img/Inapppurchase/Screenshot_6.png">
+									<img src="assets/img/Inapppurchase/Screenshot_7.png">
+									<img src="assets/img/Inapppurchase/Screenshot_8.png">
+									<img src="assets/img/Inapppurchase/Screenshot_9.png">
+									<img src="assets/img/Inapppurchase/Screenshot_10.png">
+									<img src="assets/img/Inapppurchase/Screenshot_11.png">
+									<img src="assets/img/Inapppurchase/Screenshot_12.png">
+									<img src="assets/img/Inapppurchase/Screenshot_13.png">
+									<img src="assets/img/Inapppurchase/Screenshot_14.png">
+									<img src="assets/img/Inapppurchase/Screenshot_15.png">
+									<img src="assets/img/Inapppurchase/Screenshot_16.png">
+									<img src="assets/img/Inapppurchase/Screenshot_17.png">
+									<img src="assets/img/Inapppurchase/Screenshot_18.png">
+									<img src="assets/img/Inapppurchase/Screenshot_19.png">
+																		
+								</div>	
+							
+							</section>
+
+								<section id="enable_deep_linking" class="doc-section" >
+								<h2 class="section-title"> Enable Deep linking </h2>
+								<div class="section-block">
+									
+									<p>For enable deep linking open<a href="assets/js/assetlinks.json" target="_blank" download="assetlinks.json">assetlinks.json </a> file and right click on the file and save it</p>
+
+									<img src="assets/img/Screenshot_80.png">
+									<img src="assets/img/Screenshot_76.png">
+									<img src="assets/img/Screenshot_77.png">
+									<img src="assets/img/Screenshot_78.png">
+
+									<h4>After done all the editing of the file assistlinks.json file paste the file on server in that address</h4>
+									<h4>https://your_domain/.well-known/assetlinks.json</h4>
+
+									<img src="assets/img/Screenshot_79.png">
+
+									<img src="assets/img/Screenshot_99.png">
+																	
+								</div>	
+							
+							</section>
+
+
+
+							<section id="Generate-Debug-Apk" class="doc-section">
+								<h2 class="section-title"> Generate Debug Apk </h2>
+								
+								<div class="section-block">
+									<P>Here is the Helping video for generating debug APK</P>
+
+									<div class="embed-responsive embed-responsive-16by9"><iframe width="876" height="493" src="https://www.youtube.com/embed/ySG12kDRcd4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+									
+									<h4>Step 1</h4>
+									<img src="assets/img/Screenshot_1700450045004500450045.png?time=1234">
+
+								</div>	
+							
+							</section>
+					    
+                        
+							<section id="API-Configuration" class="doc-section">
+								<h2 class="section-title"> Web API Configuration </h2>
+								<div class="section-block">
+									
+									
+									
+									<p>installing Spectraz PHP API is an easy process and we will guide you through it .</p>
+									<p>Before getting started, please make sure your web server meets all the requirements: </p>
+									
+									<ul>
+										<li>Latest PHP Version 7.0 </li>
+										<li>MySQL extension (enabled on all hosts by default)</li>
+									</ul>
+									
+									<div class="embed-responsive embed-responsive-16by9"><iframe width="876" height="493" src="https://www.youtube.com/embed/ydYZsA1kgaM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+										
+								
+									<p><strong>Step 1 -</strong> Upload the <strong>mobileapp_api</strong> files which we have provided in your downloaded package from <strong>codecanyon</strong></p>
+                                    <p><strong>Step 2 -</strong> Login in your hosting cpanel Navigate to <em>File Manager</em> , upload the <strong>mobileapp_api.zip</strong> , then extract it </p>
+                                    <p><strong>Step 3 -</strong> For Database & 3rd party API configurations edit constant.php file which is located at <strong>"mobileapp_api/app/Config/constant.php"</strong></p>
+                                    
+                                   
+                                   <div class="section-block">
+
+									<h4 id="#">if you dont have htaccess file?</h4>
+									
+									<p>Make sure .htaccess file exist in the directory mobileapp_api/. If not then create the file .htaccess and copy the below code in it</p>
+									<br>
+									
+									<code>
+										&lt;IfModule mod_rewrite.c&gt;<br>
+										<br>
+										    RewriteEngine On<br>
+                                            RewriteCond %{REQUEST_FILENAME} !-d<br>
+                                            RewriteCond %{REQUEST_FILENAME} !-f<br>
+                                            RewriteRule ^(.*)$ index.php [QSA,L]<br>
+                                        <br>
+										&lt;/IfModule&gt;
+									</code>
+										
+								
+									
+								</div>
+                                  
+                               
+                                   
+                                    <h4>SQL Database Setup</h4>
+    								<p><strong>Step 1 -</strong>Import the SQL file which we have provided in your downloaded package from <strong>codecanyon</strong></p>
+    								<p><strong>Step 2 -</strong> edit constant.php file which is located at <strong>"mobileapp_api/app/Config/constant.php"</strong></p>
+    								
+    							
+    								
+    								<p>Fill the database details in <strong>"mobileapp_api/app/Config/constant.php"</strong></p>
+    								
+    								<pre>
+define('DATABASE_HOST', 'localhost');
+define('DATABASE_USER', '');
+define('DATABASE_PASSWORD', '');
+define('DATABASE_NAME', '');
+    								</pre>
+
+									<h4>Step 3</h4>
+									
+									<ul>
+										<li>Create Database in mysql databases ( in cPanel ) with the name of "Spectraz" you can write what ever you want</li>
+									</ul>
+									
+									<img src="assets/img/step-400450045004500450045.png?time=1234">
+									
+									<ul>
+										<li>Create a new user</li>
+									</ul>
+									
+									<img src="assets/img/step-500450045004500450045.png?time=1234">
+
+									<ul>
+										<li>Assign that user to database</li>
+									</ul>
+									
+									<img src="assets/img/step-600450045004500450045.png?time=1234">
+
+
+                                    
+									<h4>Step 4</h4>
+									
+									<ul>
+										<li>Edit the file "constant.php" and update the Database information that you setup above</li>
+									</ul>
+									
+									<strong> Note: All these steps have been mentioned in the video. If you do not understand anything please follow the video</strong>
+
+
+									<br>
+									<br>
+									<h3>Twilio Setup</h3>
+    								<p><strong>Step 1 -</strong> Get twilio keys by Create an account on twilio and buy a number as well which is <strong>required</strong> for the Programmable SMS You can find the API KEY and auth token in: <a href="https://www.twilio.com/console" target="_blank">twilio.com</a></p>
+    								<p><strong>Step 2 -</strong> You have to allow geo permissions for sending sms <a href="https://twilio.com/console/sms/settings/geo-permissions" target="_blank">Click here</a></p>
+    								
+    								<img src="assets/img/twilio00450045004500450045.png?time=1234">
+    								
+    								<p>Fill the <em>Twilio ACCOUNT ID , AUTH TOKON and PURCHASED NUMBER</em> which twilio has provided you    in <strong>"mobileapp_api/app/Config/constant.php"</strong></p>
+    								
+<pre>
+//Twilio
+define('TWILIO_ACCOUNTSID', '');
+define('TWILIO_AUTHTOKEN', '');
+define('TWILIO_NUMBER', '');
+</pre>
+    								<img src="assets/img/twilloGeoPermission00450045004500450045.png?time=1234">
+									
+								</div>	
+							
+							</section>
+
+                            
+                            <section id="Promotion" class="doc-section">
+								<h2 class="section-title"> Promotion Setup </h2>
+								<div class="section-block">
+									
+									
+									<h4>Step 1</h4>
+									<p>Add your paypal settings in your <strong>mobileapp_api/app/Config/constant.php</strong> file</p>
+									
+									<img src="assets/img/promotion00450045004500450045.png?time=1234">
+									
+									
+								</div>	
+							
+							</section>
+                            
+                            
+							<section id="Admin-Panel-Configuration" class="doc-section">
+								<h2 class="section-title"> Admin Panel Configuration </h2>
+								<div class="section-block">
+
+									<ul>
+										<li>You have to open your API URl and copy the code from here <strong><a href="assets/img/setupAdminPanel00450045004500450045.png?time=1234" target="_blank">Click Here</a></strong> and paste it in your portal/config.php</li>
+									</ul>
+									
+									<img src="assets/img/step-700450045004500450045.png?time=1234">
+
+
+
+								</div>	
+							
+							</section>
+
+							
+							<section id="setup-s3" class="doc-section">
+								<h2 class="section-title"> Setup AWS s3 </h2>
+								<div class="section-block">
+
+									<p>Go to this url  https://console.aws.amazon.com/</p>
+									<img src="assets/img/aws100450045004500450045.png?time=1234">
+									
+									<p>Search services "IAM"</p>
+									<img src="assets/img/aws200450045004500450045.png?time=1234">
+									
+									<p>Click On Users</p>
+									<img src="assets/img/aws300450045004500450045.png?time=1234">
+									
+									<p>Add Users</p>
+									<img src="assets/img/aws400450045004500450045.png?time=1234">
+									
+									<p>add username and check field "Programmatic access"</p>
+									<img src="assets/img/aws500450045004500450045.png?time=1234">
+									
+									<p>Create a group and add these two policies in that group  (Amazons3fullaccess, Amazons3readonlyaccess)</p>
+									<img src="assets/img/aws600450045004500450045.png?time=1234">
+									
+									<p>tags are optional - you can skip that and hit Create user button</p>
+									
+									<p>Not down access key id and secret key and download the file and save it.</p>
+									<img src="assets/img/aws800450045004500450045.png?time=1234">
+									
+									<p>Then go to https://console.aws.amazon.com/ and search “S3” or go directly here https://console.aws.amazon.com/s3/</p>
+									<img src="assets/img/aws900450045004500450045.png?time=1234">
+
+									<p>And create a Bucket. Set a name and choose options according to your choice and you are done. Use this bucket name in the code.</p>
+									<p>Note. These are the steps which you need to do to setup aws. You can also find on google a lot of tutorials for this. Amazon also updates the interface time to time. So please don’t ask us questions here regarding  what region to choose or what name to choose etc etc. These are the basic steps we have mentioned here. So you should need to read aws documentation as well. We would try our best to help you as we can</p>
+									
+									<p>Now you have to fill the information in <strong>app/Config/constant.php</strong>  , if you donot have the files then you have to contact us for the AWS files this feature is only for extended license customers</p>
+									
+									<img src="assets/img/s300450045004500450045.png?time=1234">
+									
+									
+									<strong>How you find bucket region on amazon S3?</strong>
+									<p>You can get the bucket region by clicking on your bucket name. Your region will show up in the url for example our bucket name is qboxus_bucket and once we clicked on it this shows in the url</p>
+									<img src="assets/img/awsregion00450045004500450045.png?time=1234">
+
+									<h3>Setup a CloudFront?</h3>
+									<p>Click on get started  Under Web Section</p>
+									<img src="assets/img/cdn100450045004500450045.png?time=1234">
+									<p>Select s3 folder in the domian section and click create distribution</p>
+									<img src="assets/img/cdn200450045004500450045.png?time=1234">
+										<p>Copy domain link and enter in <strong>app/Config/constant.php</strong></p>
+									<img src="assets/img/cdn300450045004500450045.png?time=1234">
+									<p>You can get the bucket region by clicking on your bucket name. Your region will show up in the url for example our bucket name is qboxus_bucket and once we clicked on it this shows in the url</p>
+									<img src="assets/img/awsregion00450045004500450045.png?time=1234">
+									
+									
+									<h4 id="#">Thank you & Support</h4>
+									
+									<p> I'd like to thank you again for your purchase and I hope you where able to successfully install the app and using it in your future business . If you need support or have some questions. You can visit our support resources here at <b style="color:#fc5a55;">hello@qboxus.com</b> </p>
+									
+									<strong>What support does include</strong>
+									<ul>
+										<li>Answers to (technical) questions about the item's features</li>
+										<li>Assistance with reported bugs and issues</li>
+										<li>Answers to questions about importing and setting up the item as is described in the docs.</li>
+									</ul>
+
+
+									<strong>Please note that support does not include:</strong>
+									<ul>
+										<li>Customization &amp; adding new features</li>
+										<li>Installation Services</li>
+										<li>Support for 3rd party software and/or plugins</li>
+										<li>Content related rejections and violations from Google</li>
+
+									</ul>
+
+								</div>	
+							
+							</section>
+							
+							<section id="faq" class="doc-section">
+								<h2 class="section-title"> FAQ </h2>
+								
+								<div class="section-block">
+									<h4 id="#">App Develope in native or not?</h4>
+									<p>Yes app is in native coding</p>
+									
+									<h4 id="#">Which PHP version?</h4>
+									<p>it will work on PHP 7.0 or more then 7.0 </p>
+									
+									<h4 id="#">Which Database You are using?</h4>
+									<p>We are using mysql database</p>
+									
+									
+									<h4 id="#">Does it have Admin panel </h4>
+									<p>Yes It has admin panel as well which is in HTML/CSS and connected with datbase via PHP API</p>
+									
+									<h4 id="#">Does it have Documentation  </h4>
+									<p>Yes it has Documentaion about android , web api setup , admin panel setup , firebase push notification setup</p>
+									
+								</div>	
+							
+							</section>
+								
+							
+                        </div>
+                    </div>
+                    <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+                        <div id="doc-nav" class="doc-nav">
+	                        
+	                            <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+	                                <a class="nav-link scrollto" href="#get-started-section">Get Started</a>
+	                                <a class="nav-link scrollto" href="#premium-features">Premium Features</a>
+	                                <a class="nav-link scrollto" href="#server-requirements">Server Requirements</a>
+	                                <a class="nav-link scrollto" href="#Android-Configuration">Install Android studio</a>
+									<a class="nav-link scrollto" href="#SDK-Manager">SDK Manager</a>
+										<nav class="doc-sub-menu nav flex-column">
+										   <a class="nav-link scrollto" href="#Importing-Android-Project">Importing Android Project</a>
+										</nav>
+										<a class="nav-link scrollto" href="#Change-App-Name">App Basic Setting</a>
+										<nav class="doc-sub-menu nav flex-column">
+                                            
+                                            
+                                            <a class="nav-link scrollto" href="#Register-Bundle">Register Bundle ID <b style="color: white;background: #00e4bc;padding: 2px 5px;font-size: 11px;border-radius: 3px;">[Important]</b></a>
+										    <a class="nav-link scrollto" href="#Change-App-Name">Change App Name</a>
+										   <a class="nav-link scrollto" href="#Change-Color-Scheme">Change Color Scheme</a>
+										   <a class="nav-link scrollto" href="#Change-Theme-of-Application">Change Theme of Application</a>
+										   <a class="nav-link scrollto" href="#Change-App-icon">Change App Icon</a>
+                                           <a class="nav-link scrollto" href="#Change-Suplash-screen">Change Splash Screen</a>
+										   <a class="nav-link scrollto" href="#Change-API-Links">Change API Links</a>
+
+
+										   <a class="nav-link scrollto" href="#Change-AdMob">Setup Ad Mob</a>
+
+										   <a class="nav-link scrollto" href="#In-app-Purchases" style="display:none;">In-app Purchases</a>
+
+										   <a class="nav-link scrollto" href="#Change-Language">Change Language</a>
+										</nav>	
+									<a class="nav-link scrollto" href="#Firebase-Configuring">Firebase Configuring</a>
+									<a class="nav-link scrollto" href="#Nudity-Detection">Nudity Detection <b style="color: white;background: #00e4bc;padding: 2px 5px;font-size: 11px;border-radius: 3px;">[New]</b></a>
+									
+									<a class="nav-link scrollto" href="#Push-Notification-Cloud-Function" style="display:none;">Push Notification Cloud Function</a>
+									
+									<a class="nav-link scrollto" href="#Debug-and-release-Key">Debug and release Key</a>
+									
+									<a class="nav-link scrollto" href="#Facebook-Login">Facebook Login Configuration</a>
+									<a class="nav-link scrollto" href="#Google-Login-Configuration">Google Login Configuration</a>	
+									<a class="nav-link scrollto active" href="#Hide-Any-Social-Media-Button">Hide Any Social Media Button</a>	
+									<a class="nav-link scrollto active" href="#Giphy-API">Giphy API & Integration</a>
+									<a class="nav-link scrollto" href="#argear-configuration">AR Filter and 3D effects (ARGear) </a>
+									<a class="nav-link scrollto" href="#agora-streaming">Live Streaming (Agora) </a>
+									<a class="nav-link scrollto" href="#In-app-Purchase">In-app Purchases</a>
+									<a class="nav-link scrollto" href="#enable_deep_linking">Enable Deep Linking</a>
+									<a class="nav-link scrollto" href="#Generate-Debug-Apk">Generate Debug Apk</a>
+									<a class="nav-link scrollto" href="#API-Configuration">Web API Configuration</a>
+									<a class="nav-link scrollto" href="#Promotion">Promotion</a> 
+									<a class="nav-link scrollto" href="#Admin-Panel-Configuration">Admin Panel Configuration</a>
+									<a class="nav-link scrollto" href="#setup-s3">Setup AWS S3 (Extended Licence only)</a>
+									<a class="nav-link scrollto" href="#faq">FAQ</a>
+									
+	                            </nav>
+	                        
+                        </div>
+                    </div>
+                </div>             
+            </div>
+        </div>
+        
+       
+        
+    </div>
+    
+     
+     
+    <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>      
+    <script type="text/javascript" src="assets/plugins/stickyfill/dist/stickyfill.min.js"></script>                                                             
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <style>
+        /*Cookie Consent Begin*/
+            #cookieConsent {
+                background-color:#00e4bc;
+                min-height: 26px;
+                font-size: 14px;
+                color: #ffffff;
+                line-height: 26px;
+                padding: 10px 0 10px 30px;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 9999;
+            }
+            #cookieConsent a {
+                color: #4B8EE7;
+                text-decoration: none;
+            }
+            #closeCookieConsent {
+                float: right;
+                display: inline-block;
+                cursor: pointer;
+                height: 20px;
+                width: 20px;
+                margin: -15px 0 0 0;
+                font-weight: bold;
+            }
+            #closeCookieConsent:hover {
+                color: #FFF;
+            }
+            #cookieConsent a.cookieConsentOK {
+                background-color: #F1D600;
+                color: #000;
+                display: inline-block;
+                border-radius: 5px;
+                padding: 5px 40px;
+                cursor: pointer;
+                float: right;
+                margin: 0 60px 0 10px;
+                font-weight: 600;
+            }
+            #cookieConsent a.cookieConsentOK:hover {
+                background-color: #E0C91F;
+            }
+            /*Cookie Consent End*/
+
+    </style>
+</body>
+
+
+</html> 
+
