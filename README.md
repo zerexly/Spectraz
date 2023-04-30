@@ -2,7 +2,7 @@
   <h3 align="center">Spectraz App</h3>
 
   <p align="center">
-    OpenAI Content & Image Generator and Writing Assistant (SaaS).
+    Spectraz is a social media like (tik tok).
     <br />
     <br />
     <a href="https://github.com/sahilarun/Spectraz/issues">Report Bug</a>
